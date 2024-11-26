@@ -50,7 +50,30 @@ for i in range (3):
         print(matrix[i][j], end=" ")
     print("\n")
 
+row = int(input("How many rows:"))
+col = int(input("How many columns:"))
 
+matrix1= []
 
+for i in range(row):
+    temp = []
+    for i in range(col):
+        n= int(input("What numbers do you want"))
+        temp.append(n)
+    matrix1.append(temp)
+for i in range (row):
+    for j in range(col):
+        print(matrix1[i][j], end=" ")
+    print("\n")
 
-
+matrixA = [[1,2],[3,4]]
+matrixB = [[3,4],[5,6]]
+result = [[0,0],[0,0]]
+print("Matrix Addition")
+for i in range(0,2):
+    for j in range(0,2):
+        result[i][j] = matrixA[i][j] + matrixB[i][j]
+for i in range (0,2):
+    for j in range(0,2):
+        print(result[i][j], end=" ")
+    print("\n")
